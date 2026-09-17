@@ -1,5 +1,3 @@
-// import React from 'react'
-
 
 const Card = ({ children, bg = 'bg-gray-200' }) => {
     return (

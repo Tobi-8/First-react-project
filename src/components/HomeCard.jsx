@@ -18,12 +18,12 @@ const HomeCard = () => {
             >
               Browse Jobs
             </Link>
-          </Card>
+          </Card> 
 
           <Card bg="bg-indigo-100">
-            <h2 className="font-bold text-2xl capitalize ">for Developers</h2>
+            <h2 className="font-bold text-2xl capitalize ">for Employers</h2>
             <p className="font-semibold">
-              browse our React Jobs and start your career today
+                 List your job to find the perfect developer for the role
             </p>
             <Link
               to="/jobs"
