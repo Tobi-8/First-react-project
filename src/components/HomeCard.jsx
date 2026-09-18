@@ -26,10 +26,10 @@ const HomeCard = () => {
                  List your job to find the perfect developer for the role
             </p>
             <Link
-              to="/jobs"
+              to="/add-job"
               className="bg-indigo-700 px-4 py-2 mt-1.5 rounded-lg text-white"
             >
-              Browse Jobs
+               Add Job
             </Link>
           </Card>
         </div>
