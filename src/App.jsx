@@ -76,6 +76,7 @@ const rel = await fetch(`https://job-api-hrlu.onrender.com/jobs/${job.id}`,{
       <Route path="*" element={<NotFoundPage/>} />
     </Route>
   ),  
+   { basename:"/First-react-project/"},
 );
   
   return (<RouterProvider router={router} />);
