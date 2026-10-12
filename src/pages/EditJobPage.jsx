@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const EditJobPage = ({ updateJobSubmit }) => {
-  const job = useLoaderData();
+  const job = useLoaderData(); 
 
   const [title, setTitle] = useState(job.title);
   const [type, setType] = useState(job.type);

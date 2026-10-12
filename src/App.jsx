@@ -8,9 +8,19 @@ import HomePage from "./pages/HomePage";
 import MainLayouts from "./layouts/MainLayouts";
 import JobsPage from "./pages/JobsPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import JobPage, { JobLoader } from "./pages/JobPage";
+import JobPage from "./pages/JobPage";
 import AddJobPage from "./pages/AddJobPage";
 import EditJobPage from "./pages/EditJobPage";
+
+// params holds the dynamic segments of the URL defined in the route (e.g. /jobs/:id)
+// so if the URL is /jobs/3, then params.id === "3"
+// React Router automatically passes params into the loader so we can use it to fetch the right job
+const JobLoader = async ({ params }) => {
+  const APIUrl = "https://job-api-hrlu.onrender.com/jobs";
+  const res = await fetch(`${APIUrl}/${params.id}`);
+  const data = await res.json();
+  return data;
+};
 
 
 

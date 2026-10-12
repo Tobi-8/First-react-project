@@ -86,21 +86,4 @@ await deleteJob(jobID);
   );
 };
 
-const JobLoader = async ({ params }) => {
-  const APIUrl = "https://job-api-hrlu.onrender.com/jobs";
-  const res = await fetch(`${APIUrl}/${params.id}`);
-  const data = await res.json();
-  return data;
-};
-
-export { JobPage as default, JobLoader };
-
-
-// params holds the dynamic segments of the URL defined in the route (e.g. /jobs/:id)
-// so if the URL is /jobs/3, then params.id === "3"
-// React Router automatically passes params into the loader so we can use it to fetch the right job
-// const JobLoader = async ({ params }) => {
-//   const res = await fetch(`${APIUrl}/${params.id}`);
-//   const data = await res.json();
-//   return data;
-// };
+export default JobPage;
